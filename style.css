@@ -1,0 +1,69 @@
+:root {
+    --main-color:#2490E9;
+    --second-color:rgb(255, 166, 0);
+
+    --third-color: rgba(228, 110, 99, 0.603);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {overflow:hidden;}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Permanent Marker', cursive;
+    color: var(--main-color);
+    padding-top: 10px;
+    font-size: 65px;
+
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 4.5em;
+    font-family: 'Permanent Marker', cursive;
+    padding-top: 5px;
+    color: var(--second-color);
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99.9vw;
+    /* border: 1px solid red; */
+    height: 99.9vh;             /*no height makes the div grow with content*/
+}
+
+.inner {
+    width: 40%;                 /* inner div width*/
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+.title {
+    background-color: var(--third-color);
+    border-bottom: 5px solid var(--main-color); 
+    
+}
+
+.thirds {
+    /* border: 1px solid red; */
+    height: 25%
+}
+.board-container {
+    height: 50%
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
