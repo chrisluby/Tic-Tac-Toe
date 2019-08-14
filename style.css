@@ -1,17 +1,26 @@
 :root {
-    --background-color:#f0f5f9;
+    --background-color:#FFFFFC;
     /* #F8F9F9 */
 
-    --titletext-color:#311d3f;
+    --titletext-color:#272727;
+    --button-color: rgba(70, 177, 201, 0.678);
+    --title-color: rgba(70, 177, 201, 0.678);
+
+    --second-color: #FFFFFC;
 
 
-    --title-color: #3f71af27;
 
 
-    --board-color: #dbe2ef;
+
+    --board-color: var(--title-color);
 
 
-    --line-color: #ff5858;
+   
+}
+
+.shadow {
+    -webkit-box-shadow: 7px 11px 18px 5px rgba(0,0,0,0.14); 
+    box-shadow: 7px 11px 18px 5px rgba(0,0,0,0.14);
 }
 
 * {
@@ -22,7 +31,7 @@
 html, body {overflow:hidden;}
 
 body {
-    background-color: var(--background-color);
+    background-color: #262626;
     
 }
 
@@ -34,28 +43,19 @@ h1 {
     padding: 0px;
     font-size: 55px;
     width: 2.5%;
-    
-    
-
-    
-    /* -webkit-text-stroke-width: .01px;
-    -webkit-text-stroke-color: #F5E5FC; */
-     
-
 }
 
 #cl {
     display: flex;
     justify-content: center;
     padding-top: 22px;
-    width: 300px;
-    background-color: #3f72af;
+    width: 325px;
+    background-color: var(--second-color);
     border-top: 1px solid var(--title-color);
     border-bottom: 1px solid var(--title-color);
-    border-radius: 55px;
+    border-radius: 20px;
     margin-top: 1px;
     margin-bottom: 1px;
-    
 }
 
 h3 {
@@ -64,7 +64,7 @@ h3 {
     font-size: 5em;
     font-family: 'Permanent Marker', cursive;
     padding-top: px;
-    color: var(--second-color);
+    
 }
 
 .flex {
@@ -94,10 +94,22 @@ h3 {
     width: 100%;
     background-color: var(--title-color);
     height: 15%;
+    margin: 20px 0 0 0; 
     border-radius: 10px;
 }
 .spacer {
-    height: 3%;
+    height: 5%;
+    box-sizing: border-box;
+}
+.currPlayer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 35px 0px 10px 0px;
+    font-size: 62px;
+    height: 7%;
+    background-color: rgb(255, 255, 252);
+    border-radius: 10px;
     box-sizing: border-box;
 }
 .thirds {
@@ -143,12 +155,19 @@ h3 {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    border: 2.5px solid black;
+    border: 2.5px solid var(--titletext-color);
+    
 
 }
 
+
+
+.sq:hover {
+    background-color: rgba(70, 177, 201, 0.692);
+}
+
 .mr {
-    border-bottom: 2.5px solid black;
+    border-bottom: 2.5px solid var(--titletext-color);
   }
 
   .tl, .tm, .tr {
@@ -173,7 +192,21 @@ h3 {
   .mr, .ml, .mm {
       border-top: 0px;
   }
+
+  .btnBox {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 5%
+  }
+
+  button {
+      width: 40%;
+      height: 40px;
+  }
   
+  button:focus {outline:0;}
 
 
 
@@ -182,3 +215,6 @@ h3 {
     margin: 0;
     padding: 0;
   }
+
+
+ 
